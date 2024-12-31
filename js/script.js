@@ -51,6 +51,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "currentLocation") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -63,13 +66,13 @@ function updateCity(event) {
           </div>
           <div class="time">${cityTime.format(
             "h:mm:ss"
-          )} <small>${cityTime.format("A")}</small></div>`;
+          )} <small>${cityTime.format("A")}</small></div></div>
+    <a href="index.html">Back to default cities</a>
+    `;
 }
 
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
-
-//
 
 updateTime();
 setInterval(updateTime, 1000);

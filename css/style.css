@@ -7,16 +7,23 @@ h1 {
   font-family: "Rubik Vinyl", serif;
   font-size: 36px;
 }
+h1 a {
+  color: #000;
+}
 footer {
   text-align: center;
   font-size: 12px;
   color: rgb(0, 0, 0);
 }
 a {
-  color: rgb(69, 103, 137);
+  color: rgb(95, 95, 95);
+  text-decoration: none;
 }
 a:hover {
   color: rgb(105, 84, 91);
+}
+footer a {
+  color: #365a74;
 }
 select {
   width: 100%;
