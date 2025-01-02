@@ -23,18 +23,19 @@ button {
   border-radius: 5px;
   border: none;
   padding: 8px;
+  font-size: 15px;
 }
 .theme-buttons-style {
   display: flex;
   justify-content: space-around;
-  margin-left: -10px;
+  margin-left: -20px;
 }
 a {
   color: black;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(105, 84, 91);
+  color: rgb(144, 140, 141);
 }
 select {
   width: 100%;
@@ -47,7 +48,7 @@ select {
   margin: 40px auto;
   background: white;
   border-radius: 2px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 5px 8px 8px 5px rgba(149, 81, 135, 0.2);
   border: 2px dashed black;
 }
@@ -71,7 +72,7 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin: 20px 33px;
   font-size: 14px;
   padding: 8px;
   border-bottom: 1px dashed grey;
@@ -81,6 +82,7 @@ select {
   border-radius: 10px;
   border: none;
   transition: all 250ms ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgb(134, 134, 134, 0.7);
 }
 .city:last-child {
   border: none;
@@ -129,11 +131,11 @@ select {
 }
 .themeAsk {
   text-align: center;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: bold;
   font-family: sans-serif;
   color: rgb(123, 110, 114);
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .dark .themeAsk {
   color: white;
@@ -156,9 +158,8 @@ select {
 }
 .dark .city:hover {
   background: rgb(24, 25, 72);
-  opacity: 0.7;
-  color: white;
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgb(134, 134, 134);
 }
 .dark {
   background: black;
@@ -173,13 +174,9 @@ select {
   background: black;
   color: white;
 }
-.dark .darkThemeButton {
-  background: white;
-  color: black;
-}
 .dark .darkThemeButton:hover {
-  background: rgb(229, 229, 229);
-  color: black;
+  background: rgb(87, 87, 87);
+  color: white;
 }
 .colorThemeButton {
   background: palevioletred;
@@ -197,13 +194,13 @@ select {
   );
 }
 .color a {
-  color: rgb(119, 73, 97);
+  color: rgb(72, 72, 72);
 }
 .color a:hover {
-  color: rgb(163, 116, 141);
+  color: grey;
 }
 .color footer {
-  color: rgb(255, 255, 255);
+  color: rgb(80, 79, 79);
 }
 .color .container {
   background: linear-gradient(
@@ -218,7 +215,8 @@ select {
 .color .city:hover {
   background: rgba(212, 143, 168, 0.5);
   color: white;
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgb(134, 134, 134);
 }
 .color .colorThemeButton {
   background: white;
@@ -244,7 +242,9 @@ select {
   color: white;
 }
 .beach .city:hover {
-  background: rgb(255, 255, 207, 0.5);
+  background: rgb(255, 255, 207, 0.7);
+  transition: all 200ms ease-in-out;
+  box-shadow: 2px 2px 5px 1px rgba(227, 227, 227);
 }
 .beach h1 a {
   color: rgb(255, 255, 255);
@@ -257,9 +257,6 @@ select {
 }
 .beach .themeAsk {
   color: rgb(67, 89, 171);
-}
-.beach footer {
-  color: rgb(132, 132, 132);
 }
 .timezone {
   border-top: 1px solid rgb(202, 202, 202);
