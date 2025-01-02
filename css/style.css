@@ -22,6 +22,7 @@ button {
 .theme-buttons-style {
   display: flex;
   justify-content: space-around;
+  margin-left: -10px;
 }
 a {
   color: rgb(95, 95, 95);
@@ -241,13 +242,13 @@ select {
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 2.9)
     ),
-    url("img/beachtheme1.jpg");
+    url("/img/beachtheme1.jpg");
   background-size: cover;
   border: 1px solid black;
-  opacity: 1.5;
+  /pacity: 1.5;
 }
 .beach {
-  background-image: url("img/beachtheme1.jpg");
+  background-image: url("/img/beachtheme1.jpg");
   background-size: cover;
 }
 .beach .city:hover {
