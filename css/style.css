@@ -54,16 +54,15 @@ select {
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 2.9)
     ),
-    url("images/summerbadestrand-190485_7908.jpg");
+    url("images/beach-185787_58.png");
   background-size: cover;
   border: 1px solid black;
   opacity: 1.5;
   max-width: 600px;
 }
 .beach {
-  background-image: url("images/summerbadestrand-190485_7908.jpg");
+  background-image: url("images/beach-185787_58.png");
   background-size: cover;
-  background: rgb(231, 219, 106);
 }
 .city {
   display: flex;
