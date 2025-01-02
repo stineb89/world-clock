@@ -95,7 +95,7 @@ function darkTheme() {
   beachButtonElement.remove();
   document.getElementById(
     "darkThemeButton"
-  ).innerHTML = `<a href="/">Default Theme</a>`;
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
 }
 
 function colorTheme() {
@@ -113,7 +113,7 @@ function colorTheme() {
   beachButtonElement.remove();
   document.getElementById(
     "colorThemeButton"
-  ).innerHTML = `<a href="/">Default Theme</a>`;
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
 }
 
 function beachTheme() {
@@ -131,7 +131,7 @@ function beachTheme() {
   darkButtonElement.remove();
   document.getElementById(
     "beachThemeButton"
-  ).innerHTML = `<a href="/">Default Theme</a>`;
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
 }
 let local = moment.tz.guess();
 let localElement = document.querySelector("#local-time-zone");
