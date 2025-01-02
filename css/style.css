@@ -49,6 +49,20 @@ select {
   box-shadow: 5px 8px 8px 5px rgba(149, 81, 135, 0.2);
   border: 2px dashed black;
 }
+.beach .container {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 2.9)
+    ),
+    url("images/beachthemestrand1.jpg");
+  background-size: cover;
+  border: 1px solid black;
+  opacity: 1.5;
+}
+.beach {
+  background-image: url("images/beachthemestrand1.jpg");
+  background-size: cover;
+}
 .city {
   display: flex;
   justify-content: space-between;
@@ -237,20 +251,6 @@ select {
 .beachThemeButton:hover {
   background: rgb(215, 171, 69);
   color: white;
-}
-.beach .container {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 2.9)
-    ),
-    url("images/beachtheme1.jpg");
-  background-size: cover;
-  border: 1px solid black;
-  /pacity: 1.5;
-}
-.beach {
-  background-image: url("images/beachtheme1.jpg");
-  background-size: cover;
 }
 .beach .city:hover {
   background: rgb(255, 255, 207, 0.5);
