@@ -12,20 +12,25 @@ h1 a {
 }
 footer {
   text-align: center;
-  font-size: 12px;
-  color: rgb(0, 0, 0);
+  font-size: 11px;
+  color: rgb(137, 137, 137);
+  font-family: Tahoma;
+  margin: 20px;
 }
 button {
   cursor: pointer;
   margin: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
 }
 .theme-buttons-style {
   display: flex;
   justify-content: space-around;
-  margin-left: 0px;
+  margin-left: -10px;
 }
 a {
-  color: rgb(95, 95, 95);
+  color: black;
   text-decoration: none;
 }
 a:hover {
@@ -53,7 +58,7 @@ select {
     ),
     url("../images/summerbadestrand-190485_7908.jpg/");
   background-size: cover;
-  border: 1px solid black;
+  border: 1px solid white;
   opacity: 1.5;
   max-width: 600px;
   /** background-color: rgb(216, 198, 42); */
@@ -67,7 +72,7 @@ select {
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
-  font-size: 15px;
+  font-size: 14px;
   padding: 8px;
   border-bottom: 1px dashed grey;
 }
@@ -164,18 +169,8 @@ select {
 .dark a {
   color: rgb(197, 197, 197);
 }
-.dark a:hover {
-  color: rgb(191, 216, 220);
-}
 .darkThemeButton {
   background: black;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  padding: 10px 10px;
-}
-.darkThemeButton:hover {
-  background: rgb(119, 119, 119);
   color: white;
 }
 .dark .darkThemeButton {
@@ -189,9 +184,6 @@ select {
 .colorThemeButton {
   background: palevioletred;
   color: white;
-  border-radius: 5px;
-  border: none;
-  padding: 10px 10px;
 }
 .colorThemeButton:hover {
   background: rgb(226, 173, 190);
@@ -205,10 +197,10 @@ select {
   );
 }
 .color a {
-  color: rgb(255, 220, 164);
+  color: rgb(119, 73, 97);
 }
 .color a:hover {
-  color: rgb(212, 212, 212);
+  color: rgb(163, 116, 141);
 }
 .color footer {
   color: rgb(255, 255, 255);
@@ -239,16 +231,12 @@ select {
 .beachThemeButton {
   background: rgb(196, 142, 15);
   color: white;
-  border-radius: 5px;
-  border: none;
-  padding: 10px 10px;
 }
 .beach .beachThemeButton {
-  background: rgb(196, 142, 15);
-  color: white;
+  background: rgb(88, 156, 208);
 }
 .beach .beachThemeButton:hover {
-  background: rgb(215, 171, 69);
+  background: rgb(88, 156, 250);
   color: white;
 }
 .beachThemeButton:hover {
@@ -258,16 +246,22 @@ select {
 .beach .city:hover {
   background: rgb(255, 255, 207, 0.5);
 }
-.beach a {
+.beach h1 a {
   color: rgb(255, 255, 255);
-  color: white;
 }
-.beach a:hover {
-  color: rgb(80, 81, 80);
+.beach footer a {
+  color: rgb(88, 156, 250);
+}
+.beach a {
+  color: white;
 }
 .beach .themeAsk {
   color: rgb(67, 89, 171);
 }
 .beach footer {
   color: rgb(132, 132, 132);
+}
+.timezone {
+  border-top: 1px solid rgb(202, 202, 202);
+  margin: 10px;
 }

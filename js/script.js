@@ -98,6 +98,24 @@ function darkTheme() {
   ).innerHTML = `<a href="index.html">Default Theme</a>`;
 }
 
+function darkTheme() {
+  let body = document.querySelector("body");
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+  } else {
+    body.classList.add("dark");
+  }
+
+  let colorButtonElement = document.getElementById("colorThemeButton");
+  colorButtonElement.remove();
+  let beachButtonElement = document.getElementById("beachThemeButton");
+  beachButtonElement.remove();
+  document.getElementById(
+    "darkThemeButton"
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+}
+
 function colorTheme() {
   let body = document.querySelector("body");
 
@@ -135,4 +153,5 @@ function beachTheme() {
 }
 let local = moment.tz.guess();
 let localElement = document.querySelector("#local-time-zone");
-localElement.innerHTML = `<em>Your current timezone is ${local}</em>`;
+localElement.innerHTML = `<em>Your current timezone is ${local}</em>
+<div class="timezone"></div>`;
