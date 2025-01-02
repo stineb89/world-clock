@@ -42,7 +42,7 @@ select {
 }
 .container {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 20px auto;
   background: white;
   border-radius: 2px;
   padding: 20px;
@@ -54,14 +54,14 @@ select {
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 2.9)
     ),
-    url("images/beachthemestrand1.jpg");
+    url("images/summerbadestrand-190485_7908.jpg");
   background-size: cover;
   border: 1px solid black;
   opacity: 1.5;
   max-width: 600px;
 }
 .beach {
-  background-image: url("images/beachthemestrand1.jpg");
+  background-image: url("images/summerbadestrand-190485_7908.jpg");
   background-size: cover;
   background: rgb(231, 219, 106);
 }
