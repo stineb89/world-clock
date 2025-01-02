@@ -15,6 +15,14 @@ footer {
   font-size: 12px;
   color: rgb(0, 0, 0);
 }
+button {
+  cursor: pointer;
+  margin: 30px;
+}
+.theme-buttons-style {
+  display: flex;
+  justify-content: space-around;
+}
 a {
   color: rgb(95, 95, 95);
   text-decoration: none;
@@ -43,8 +51,15 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10px 15px;
+  margin: 20px 10px 20px;
+  padding: 8px;
   border-bottom: 1px dashed grey;
+}
+.city:hover {
+  background: rgb(252, 244, 247);
+  border-radius: 10px;
+  border: none;
+  transition: all 250ms ease-in-out;
 }
 .city:last-child {
   border: none;
@@ -63,8 +78,190 @@ select {
   opacity: 0.6;
   font-size: 12px;
 }
-.dpM {
+.l-tz {
+  font-size: 10px;
+  text-align: center;
+  color: grey;
+}
+.dark .l-tz {
+  color: white;
+}
+.color .l-tz {
+  color: black;
+}
+.cityMeny {
   background: rgb(172, 171, 171);
   color: white;
   font-size: 15px;
+}
+.color .cityMeny {
+  background: white;
+  color: black;
+}
+.dark .cityMeny {
+  background: white;
+  color: black;
+}
+.beach .cityMeny {
+  background: white;
+  color: black;
+}
+.themeAsk {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgb(123, 110, 114);
+  margin-top: 30px;
+}
+.dark .themeAsk {
+  color: white;
+}
+.color .themeAsk {
+  color: rgb(0, 0, 0);
+}
+.dark .container {
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 0, 0) 11.2%,
+    rgb(11, 132, 145) 91.1%
+  );
+  color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px 20px 10px rgba(227, 227, 227, 0.2);
+}
+.dark .city:hover {
+  background: rgb(24, 25, 72);
+  opacity: 0.7;
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+.dark {
+  background: black;
+}
+.dark footer {
+  color: white;
+}
+.dark a {
+  color: rgb(197, 197, 197);
+}
+.dark a:hover {
+  color: rgb(191, 216, 220);
+}
+.darkThemeButton {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+}
+.darkThemeButton:hover {
+  background: rgb(119, 119, 119);
+  color: white;
+}
+.dark .darkThemeButton {
+  background: white;
+  color: black;
+}
+.dark .darkThemeButton:hover {
+  background: rgb(229, 229, 229);
+  color: black;
+}
+.colorThemeButton {
+  background: palevioletred;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+}
+.colorThemeButton:hover {
+  background: rgb(226, 173, 190);
+  color: white;
+}
+.color {
+  background: radial-gradient(
+    circle at 11.4% 50%,
+    rgb(255, 37, 174) 0%,
+    rgb(250, 237, 56) 90%
+  );
+}
+.color a {
+  color: rgb(255, 220, 164);
+}
+.color a:hover {
+  color: rgb(212, 212, 212);
+}
+.color footer {
+  color: rgb(255, 255, 255);
+}
+.color .container {
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 24, 134) 11.2%,
+    rgb(252, 232, 68) 52%,
+    rgb(53, 178, 239) 100.2%
+  );
+  border: 1px solid white;
+  box-shadow: 2px 2px 20px 10px rgba(227, 227, 227, 0.5);
+}
+.color .city:hover {
+  background: rgba(212, 143, 168, 0.5);
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+.color .colorThemeButton {
+  background: white;
+  color: black;
+}
+.color .colorThemeButton:hover {
+  background: rgb(234, 233, 233);
+  color: black;
+}
+.beachThemeButton {
+  background: rgb(196, 142, 15);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+}
+.beach .beachThemeButton {
+  background: rgb(107, 161, 211);
+  color: white;
+}
+.beach .beachThemeButton:hover {
+  background: rgb(83, 138, 189);
+  color: white;
+}
+.beachThemeButton:hover {
+  background: rgb(215, 171, 69);
+  color: white;
+}
+.beach .container {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 2.9)
+    ),
+    url("img/beachtheme1.jpg");
+  background-size: cover;
+  border: 1px solid black;
+  opacity: 1.5;
+}
+.beach {
+  background-image: url("img/beachtheme1.jpg");
+  background-size: cover;
+}
+.beach .city:hover {
+  background: rgb(255, 255, 207, 0.5);
+}
+.beach a {
+  color: rgb(255, 255, 255);
+}
+.beach a:hover {
+  color: rgb(80, 81, 79);
+}
+.beach .themeAsk {
+  color: rgb(67, 89, 171);
+}
+.beach footer {
+  color: rgb(132, 132, 132);
 }

@@ -54,6 +54,7 @@ function updateCity(event) {
   if (cityTimeZone === "currentLocation") {
     cityTimeZone = moment.tz.guess();
   }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
@@ -61,7 +62,7 @@ function updateCity(event) {
   citiesElement.innerHTML = `
   <div class="city">
           <div>
-            <h2>${cityName} </h2>
+            <h2>${cityName}  </h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
@@ -76,3 +77,62 @@ citySelect.addEventListener("change", updateCity);
 
 updateTime();
 setInterval(updateTime, 1000);
+
+//change theme
+
+function darkTheme() {
+  let body = document.querySelector("body");
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+  } else {
+    body.classList.add("dark");
+  }
+
+  let colorButtonElement = document.getElementById("colorThemeButton");
+  colorButtonElement.remove();
+  let beachButtonElement = document.getElementById("beachThemeButton");
+  beachButtonElement.remove();
+  document.getElementById(
+    "darkThemeButton"
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+}
+
+function colorTheme() {
+  let body = document.querySelector("body");
+
+  if (body.classList.contains("color")) {
+    body.classList.remove("color");
+  } else {
+    body.classList.add("color");
+  }
+
+  let darkButtonElement = document.getElementById("darkThemeButton");
+  darkButtonElement.remove();
+  let beachButtonElement = document.getElementById("beachThemeButton");
+  beachButtonElement.remove();
+  document.getElementById(
+    "colorThemeButton"
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+}
+
+function beachTheme() {
+  let body = document.querySelector("body");
+
+  if (body.classList.contains("beach")) {
+    body.classList.remove("beach");
+  } else {
+    body.classList.add("beach");
+  }
+
+  let colorButtonElement = document.getElementById("colorThemeButton");
+  colorButtonElement.remove();
+  let darkButtonElement = document.getElementById("darkThemeButton");
+  darkButtonElement.remove();
+  document.getElementById(
+    "beachThemeButton"
+  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+}
+let local = moment.tz.guess();
+let localElement = document.querySelector("#local-time-zone");
+localElement.innerHTML = `<em>Your current timezone is ${local}</em>`;

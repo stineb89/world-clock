@@ -17,10 +17,10 @@
   <body>
     <div class="container">
       <header>
-        <h1><a href="index.html">World Clock</a></h1>
+        <h1><a href="/">World Clock</a></h1>
       </header>
       <form>
-        <select class="dpM" name="city" id="city">
+        <select class="cityMeny" name="city" id="city">
           <option value="">Choose a city</option>
           <option value="currentLocation">My current Location</option>
           <option value="America/Los_Angeles">Los Angeles</option>
@@ -41,9 +41,10 @@
           <option value="Asia/Chita">Chita</option>
           <option value="Europe/Madrid">Madrid</option>
           <option value="Asia/Jerusalem">Jerusalem</option>
+          <a href="index.html" id="back-link">Back to default cities</a>
         </select>
       </form>
-      <div id="cities">
+      <div class="cities" id="cities">
         <div class="city" id="los-angeles">
           <div>
             <h2>
@@ -74,7 +75,7 @@
             </h2>
             <div class="date"></div>
           </div>
-          <div class="time"></div>
+          <div class="time" id="time"></div>
         </div>
 
         <div class="city" id="tokyo">
@@ -88,6 +89,39 @@
           <div class="time"></div>
         </div>
       </div>
+      <div class="themeAsk">
+        Clock with another theme?
+        <div>Choose one 👑</div>
+      </div>
+
+      <div class="theme-buttons-style">
+        <button
+          class="darkThemeButton"
+          id="darkThemeButton"
+          type="button1"
+          onclick="darkTheme()"
+        >
+          Dark Theme
+        </button>
+
+        <button
+          class="colorThemeButton"
+          id="colorThemeButton"
+          type="button2"
+          onclick="colorTheme()"
+        >
+          Color Theme
+        </button>
+        <button
+          class="beachThemeButton"
+          id="beachThemeButton"
+          type="button3"
+          onclick="beachTheme()"
+        >
+          Beach Theme
+        </button>
+      </div>
+      <div id="local-time-zone" class="l-tz"></div>
     </div>
     <footer>
       This project is coded by
