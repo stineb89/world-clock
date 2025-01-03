@@ -31,7 +31,7 @@ button {
   margin-left: -20px;
 }
 a {
-  color: black;
+  color: rgb(57, 57, 57);
   text-decoration: none;
 }
 a:hover {
@@ -54,7 +54,7 @@ select {
 }
 .beach .container {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 2.9)
     ),
     url("../images/summerbadestrand-190485_7908.jpg/");
@@ -62,7 +62,7 @@ select {
   border: 1px solid white;
   opacity: 1.5;
   max-width: 600px;
-  /** background-color: rgb(216, 198, 42); */
+  background-color: rgb(243, 226, 73, 0.1);
 }
 .beach {
   background-image: url("../images/summerbadestrand-190485_7908.jpg");
@@ -88,13 +88,13 @@ select {
   border: none;
 }
 .time {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   padding: 25px;
   margin: 0 0 15px;
 }
 .time small {
-  font-size: 18px;
+  font-size: 12px;
   vertical-align: middle;
 }
 .date {
@@ -164,18 +164,22 @@ select {
 .dark {
   background: black;
 }
-.dark footer {
-  color: white;
-}
 .dark a {
   color: rgb(197, 197, 197);
+}
+.dark footer {
+  color: white;
 }
 .darkThemeButton {
   background: black;
   color: white;
 }
+.darkThemeButton:hover {
+  background: rgb(56, 55, 55);
+  color: white;
+}
 .dark .darkThemeButton:hover {
-  background: rgb(87, 87, 87);
+  background: rgb(56, 55, 55);
   color: white;
 }
 .colorThemeButton {
@@ -246,8 +250,11 @@ select {
   transition: all 200ms ease-in-out;
   box-shadow: 2px 2px 5px 1px rgba(227, 227, 227);
 }
+.beach .cityMeny {
+  background: white;
+}
 .beach h1 a {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .beach footer a {
   color: rgb(88, 156, 250);

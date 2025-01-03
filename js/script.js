@@ -1,5 +1,4 @@
 function updateTime() {
-  //losangeles
   let losangelesElement = document.querySelector("#los-angeles");
   if (losangelesElement) {
     let losangelesDateElement = losangelesElement.querySelector(".date");
@@ -12,7 +11,6 @@ function updateTime() {
     );
   }
 
-  //oslo
   let osloElement = document.querySelector("#oslo");
   if (osloElement) {
     let osloDateElement = osloElement.querySelector(".date");
@@ -23,7 +21,6 @@ function updateTime() {
     osloTimeElement.innerHTML = osloTime.format("h:mm:ss [<small>]A[</small>]");
   }
 
-  //melbourne
   let melbourneElement = document.querySelector("#melbourne");
   if (melbourneElement) {
     let melbourneDateElement = melbourneElement.querySelector(".date");
@@ -35,7 +32,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  //tokyo
+
   let tokyoElement = document.querySelector("#tokyo");
   if (tokyoElement) {
     let tokyoDateElement = tokyoElement.querySelector(".date");
@@ -49,16 +46,24 @@ function updateTime() {
   }
 }
 
+// time and date
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (selectedCityInterval) clearInterval(selectedCityInterval);
+
   if (cityTimeZone === "currentLocation") {
     cityTimeZone = moment.tz.guess();
   }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cities");
 
-  citiesElement.innerHTML = `
+  if (cityTimeZone) {
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+
+    function updateSelectedCityTime() {
+      let cityTime = moment().tz(cityTimeZone);
+      let citiesElement = document.querySelector("#cities");
+
+      citiesElement.innerHTML = `
   <div class="city">
           <div>
             <h2>${cityName}  </h2>
@@ -67,10 +72,16 @@ function updateCity(event) {
           <div class="time">${cityTime.format(
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div></div>
-    <a href="index.html">Back to default cities</a>
+    <a href="/">Back to default cities</a>
     `;
+    }
+
+    updateSelectedCityTime();
+    selectedCityInterval = setInterval(updateSelectedCityTime, 1000);
+  }
 }
 
+let selectedCityInterval;
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
 
@@ -94,7 +105,7 @@ function darkTheme() {
   beachButtonElement.remove();
   document.getElementById(
     "darkThemeButton"
-  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+  ).innerHTML = `<a href="/">Default Theme</a>`;
 }
 
 function darkTheme() {
@@ -112,7 +123,7 @@ function darkTheme() {
   beachButtonElement.remove();
   document.getElementById(
     "darkThemeButton"
-  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+  ).innerHTML = `<a href="/">Default Theme</a>`;
 }
 
 function colorTheme() {
@@ -130,7 +141,7 @@ function colorTheme() {
   beachButtonElement.remove();
   document.getElementById(
     "colorThemeButton"
-  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+  ).innerHTML = `<a href="/">Default Theme</a>`;
 }
 
 function beachTheme() {
@@ -148,8 +159,9 @@ function beachTheme() {
   darkButtonElement.remove();
   document.getElementById(
     "beachThemeButton"
-  ).innerHTML = `<a href="index.html">Default Theme</a>`;
+  ).innerHTML = `<a href="/">Default Theme</a>`;
 }
+
 let local = moment.tz.guess();
 let localElement = document.querySelector("#local-time-zone");
 localElement.innerHTML = `<em>Your current timezone is ${local}</em>
