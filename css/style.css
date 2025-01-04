@@ -45,7 +45,7 @@ select {
 }
 .container {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 30px auto;
   background: white;
   border-radius: 2px;
   padding: 15px;
@@ -60,7 +60,7 @@ select {
     url("../images/summerbadestrand-190485_7908.jpg/");
   background-size: cover;
   border: 1px solid white;
-  opacity: 1.5;
+  opacity: 1.9;
   max-width: 600px;
   background-color: rgb(243, 226, 73, 0.1);
 }
@@ -71,11 +71,11 @@ select {
 }
 .city {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 33px;
+  justify-content: space-evenly;
+  margin: 20px 20px;
   font-size: 14px;
   padding: 8px;
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px dotted grey;
 }
 .city:hover {
   background: rgb(252, 244, 247);
@@ -100,11 +100,6 @@ select {
 .date {
   opacity: 0.6;
   font-size: 12px;
-}
-.l-tz {
-  font-size: 10px;
-  text-align: center;
-  color: grey;
 }
 .dark .l-tz {
   color: white;
@@ -265,7 +260,13 @@ select {
 .beach .themeAsk {
   color: rgb(67, 89, 171);
 }
-.timezone {
-  border-top: 1px solid rgb(202, 202, 202);
-  margin: 10px;
+.l-tz {
+  font-size: 10px;
+  text-align: center;
+  color: grey;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  padding: 5px;
+}
+.dark .l-tz {
+  border-bottom: 1px solid rgb(32, 32, 32);
 }
