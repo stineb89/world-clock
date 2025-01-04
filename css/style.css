@@ -71,8 +71,8 @@ select {
 }
 .city {
   display: flex;
-  justify-content: space-evenly;
-  margin: 20px 20px;
+  justify-content: space-around;
+  margin: 20px 0;
   font-size: 14px;
   padding: 8px;
   border-bottom: 1px dotted grey;
