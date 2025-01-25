@@ -9,6 +9,7 @@
 <li>Moment js - working with different timezones</li>
 <li>Current location</li>
 <li>4 different theme (default, dark, color and beach theme) to choose between</li>
+<li>Current timezone</li>
 </ul>
 
 
