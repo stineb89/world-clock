@@ -1,6 +1,6 @@
 <h1>World Clock App</h1>
 <br/>
-<br/>
+
 <p>Real date and time with different timezone all over the world at same time. 4 default cities and 18 cities in the dropdown meny.<p>
 
 <h3>This app includes:</h3>
